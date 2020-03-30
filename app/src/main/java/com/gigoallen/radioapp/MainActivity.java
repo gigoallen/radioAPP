@@ -15,13 +15,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
     public void btnOK(View view) {
         TextView txvLike = findViewById(R.id.txvShow);
-        RadioGroup kGirlGroup = findViewById(R.id.kGirlGroup);
+        RadioGroup kGrilGroup = findViewById(R.id.kGirlGroup);
 
-        int id = kGirlGroup.getCheckedRadioButtonId();
-        RadioButton selected = findViewById(id);
+       int id =  kGrilGroup.getCheckedRadioButtonId();
+       RadioButton selected = findViewById(id);
 
-        txvLike.setText("我喜歡的女團是：" + selected.getText());
+       txvLike.setText("My favorite K Girl Group:" + selected.getText());
     }
 }
